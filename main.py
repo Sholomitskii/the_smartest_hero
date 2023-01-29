@@ -11,7 +11,7 @@ for hero in response.json():
         hero_comparison_dict[hero['name']] = hero['powerstats']['intelligence']
 for hero_1 in hero_comparison_dict.items():
     if  sorted(hero_comparison_dict.values())[-1] == hero_1[1]:
-        print(hero_1[0], '- самый умный.')
+        print(f'{hero_1[0]} - самый умный.')
 
 
 
